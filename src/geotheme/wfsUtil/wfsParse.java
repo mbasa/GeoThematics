@@ -41,7 +41,7 @@ public class wfsParse {
         StringBuffer sb = new StringBuffer();
         
         sb.append(this.urlString);
-        sb.append("/wfs?request=GetFeature&version=1.0.0");
+        sb.append("/wfs?service=wfs&request=GetFeature&version=1.0.0");
         sb.append("&typeName=").append(layerName);
         
         if(fieldName != null) {
@@ -103,7 +103,7 @@ public class wfsParse {
         StringBuffer sb = new StringBuffer();
         
         sb.append(this.urlString);
-        sb.append("/wfs?request=GetCapabilities&version=1.0.0");   
+        sb.append("/wfs?service=wfs&request=GetCapabilities&version=1.0.0");   
 
         try {
             URL url = new URL(sb.toString());
@@ -170,6 +170,7 @@ public class wfsParse {
         sb.append(this.urlString);
         sb.append("/wfs?request=DescribeFeatureType&version=1.1.1&typeName=");
         sb.append(layerName);
+        sb.append("&service=wfs");
         
         try {
             URL url = new URL( sb.toString() );
