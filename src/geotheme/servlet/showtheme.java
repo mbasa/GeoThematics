@@ -80,7 +80,7 @@ public class showtheme extends HttpServlet {
 			ResourceBundle.getBundle("properties.thematic");
 		
 		this.geoserverURL = rb.getString("GEOSERVER.BASE.URL");
-		this.googleKey    = rb.getString("GOOGLE.LICENCE.KEY");
+	  //this.googleKey    = rb.getString("GOOGLE.LICENCE.KEY");
 		this.colorNames   = rb.getString("THEMATIC.COLOR.NAMES");
 		this.labelScale   = rb.getString("THEMATIC.LABEL.MAXSCALE");
 		this.themeRanges  = rb.getString("THEMATIC.RANGES");
