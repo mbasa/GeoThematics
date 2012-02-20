@@ -92,6 +92,7 @@
       "&TRANSPARENT=TRUE"+
       "&SRS="+mSRS+            
       "&BBOX="+map.getExtent().toBBOX()+
+      "&SERVICE=wms"+
       "&DATE="+date.getTime()+" id=\"legend\" /></center>";
 
       Ext.get("mapLegend").update(imgHtml,true);
